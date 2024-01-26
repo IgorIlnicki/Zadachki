@@ -10,4 +10,4 @@ while True:
     print(symbol)
 
 fh.close()
-print("")
+print("GGGGG")
