@@ -11,8 +11,8 @@ from pathlib import Path
 original_path = Path("Zadachki/test.txt")
 
 # Зміна імені файлу
-# new_path = original_path.with_name("report.txt")
-# print(new_path)
+new_path = original_path.with_name("report.txt")
+print(new_path)
 
 new_path = original_path.with_suffix(".md")
 print(new_path)
