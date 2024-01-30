@@ -7,15 +7,20 @@
 # with open("test.txt", "r") as fh:
 #     lines = [el.strip() for el in fh.readlines()]
 from pathlib import Path
+
 # Початковий шлях до файлу
-original_path = Path("Zadachki/test.txt")
+original_path = Path("D:/Projects/Dom_Zad/Zadachki/report.md")
 
 # Зміна імені файлу
-new_path = original_path.with_name("report.txt")
-print(new_path)
+# new_path_name = original_path.with_name("report.txt")
+# original_path.rename(new_path_name)
+# print(f"File renamed to: {new_path_name}")
 
-new_path = original_path.with_suffix(".md")
-print(new_path)
+# Зміна розширення файлу
+new_path_suffix = original_path.with_suffix(".txt")
+original_path.rename(new_path_suffix)
+print(f"File extension changed to: {new_path_suffix}")
+
 # print(lines)
 # with open('raw_data.bin', 'wb') as fh:
 #     fh.write(b'Hello world!')
