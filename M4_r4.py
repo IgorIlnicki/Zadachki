@@ -1,11 +1,13 @@
 from pathlib import Path
-with open("test.txt", "w") as fh:
-    fh.write("first line\nsecond line\nthird line")
+# with open("test.txt", "w") as fh:
+#     fh.write("first line\nsecond line\nthird line")
 
-with open("test.txt", "r") as fh:
-    lines = [el.strip() for el in fh.readlines()]
+# with open("test.txt", "r") as fh:
+#     lines = [el.strip() for el in fh.readlines()]
 
-print(lines)
+# print(lines)
+with open('raw_data.bin', 'wb') as fh:
+    fh.write(b'Hello world!')
 # Перетворення відносного шляху в абсолютний
 # relative_path = Path("Zadachki\M4_r4.py")
 # absolute_path = relative_path.absolute()
