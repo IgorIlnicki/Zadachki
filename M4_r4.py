@@ -8,7 +8,7 @@ from pathlib import Path
 #     lines = [el.strip() for el in fh.readlines()]
 
 # Початковий шлях до файлу
-original_path = Path("test.txt")
+original_path = Path("Zadachki/test.txt")
 
 # Зміна імені файлу
 new_path = original_path.with_name("report.txt")
