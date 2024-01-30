@@ -1,4 +1,4 @@
-from pathlib import Path
+
 # with open("test.txt", "w") as fh:
 #     fh.write("first line\nsecond line\nthird line")
 # with open('test.txt', 'r', encoding='utf-8') as file:
@@ -6,12 +6,15 @@ from pathlib import Path
 #     print(content)
 # with open("test.txt", "r") as fh:
 #     lines = [el.strip() for el in fh.readlines()]
-
+from pathlib import Path
 # Початковий шлях до файлу
-original_path = Path("test.txt")
+original_path = Path("Zadachki/test.txt")
 
 # Зміна імені файлу
-new_path = original_path.with_name("report.txt")
+# new_path = original_path.with_name("report.txt")
+# print(new_path)
+
+new_path = original_path.with_suffix(".md")
 print(new_path)
 # print(lines)
 # with open('raw_data.bin', 'wb') as fh:
