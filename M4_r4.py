@@ -1,5 +1,12 @@
 from pathlib import Path
+fh = open('test.txt', 'a+')
+fh.write('hello2!')
+fh.seek(0)
 
+first_two_symbols = fh.read(2)
+print(first_two_symbols)  # 'he'
+
+fh.close()
 # Перетворення відносного шляху в абсолютний
 # relative_path = Path("Zadachki\M4_r4.py")
 # absolute_path = relative_path.absolute()
