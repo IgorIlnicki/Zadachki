@@ -1,5 +1,4 @@
-def say_hello(name):
-    print(f'Hello, {name}')
+# main.py
+from mymodule import say_hello as greeting
 
-print("You imported hello.py")
-say_hello('user')
+print(greeting("World"))
